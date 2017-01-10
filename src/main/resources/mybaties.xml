@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-<?xml version="1.0" encoding="UTF-8"?>
-=======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -21,4 +18,3 @@
         <setting name="mapUnderscoreToCamelCase" value="true"></setting>
     </settings>
 </configuration>
->>>>>>> Stashed changes

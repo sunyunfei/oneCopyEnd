@@ -1,11 +1,5 @@
 package com.bs.controller;
 
-<<<<<<< Updated upstream
-/**
- * Created by syf on 2017/1/8.
- */
-public class UserController {
-=======
 import com.alibaba.fastjson.JSON;
 import com.bs.dao.UserDao;
 import com.bs.pojo.User;
@@ -79,5 +73,4 @@ public class UserController {
         logger.debug(map);
         return JSON.toJSONString(map);
     }
->>>>>>> Stashed changes
 }

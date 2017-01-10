@@ -1,11 +1,5 @@
 package com.bs.controller;
 
-<<<<<<< Updated upstream
-/**
- * Created by syf on 2017/1/8.
- */
-public class HomeController {
-=======
 import com.alibaba.fastjson.JSON;
 import com.bs.pojo.Home;
 import com.bs.service.imp.HomeServiceImp;
@@ -54,5 +48,4 @@ public class HomeController {
         logger.debug(map);
         return JSON.toJSONString(map);
     }
->>>>>>> Stashed changes
 }

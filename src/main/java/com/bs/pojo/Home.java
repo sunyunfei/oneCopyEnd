@@ -1,13 +1,5 @@
 package com.bs.pojo;
 
-<<<<<<< Updated upstream
-/**
- * Created by syf on 2017/1/8.
- */
-public class Home {
-
-    private Integer userId;//用户id
-=======
 import org.springframework.stereotype.Controller;
 
 /**
@@ -18,7 +10,6 @@ public class Home {
 
     private Integer userId;//用户id
     private Integer homeId;//homeId
->>>>>>> Stashed changes
     private String homeImage;//图片
     private String homeName;//发表人
     private String homeContent;//内容
@@ -34,8 +25,6 @@ public class Home {
         this.userId = userId;
     }
 
-<<<<<<< Updated upstream
-=======
     public Integer getHomeId() {
         return homeId;
     }
@@ -44,7 +33,6 @@ public class Home {
         this.homeId = homeId;
     }
 
->>>>>>> Stashed changes
     public String getHomeImage() {
         return homeImage;
     }
@@ -98,10 +86,7 @@ public class Home {
     public String toString() {
         return "Home{" +
                 "userId=" + userId +
-<<<<<<< Updated upstream
-=======
                 ", homeId=" + homeId +
->>>>>>> Stashed changes
                 ", homeImage='" + homeImage + '\'' +
                 ", homeName='" + homeName + '\'' +
                 ", homeContent='" + homeContent + '\'' +
