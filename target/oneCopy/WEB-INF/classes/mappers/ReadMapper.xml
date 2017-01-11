@@ -2,3 +2,20 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bs.dao.ReadDao">
+
+    <!--查询头图-->
+    <select id="queryReadImage" resultType="readImage">
+        SELECT *
+        FROM readImage
+        WHERE user_id=#{userId}
+    </select>
+
+    <!--查询内容-->
+    <select id="queryReadContent" resultType="readContent">
+       SELECT *
+       FROM readContent
+       WHERE user_id=#{userId}
+
+    </select>
+</mapper>

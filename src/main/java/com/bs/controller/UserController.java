@@ -44,7 +44,7 @@ public class UserController {
         map.put("code",code);
         map.put("message","注册成功");
         //日志
-        logger.debug(map);
+        logger.info(map);
         return JSON.toJSONString(map);
     }
 
@@ -70,7 +70,7 @@ public class UserController {
         }
 
         //日志
-        logger.debug(map);
+        logger.info(map);
         return JSON.toJSONString(map);
     }
 }

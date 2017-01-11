@@ -37,7 +37,7 @@ public class HomeController {
             map.put("code",-1);
             map.put("message","暂无数据");
             //日志
-            logger.debug(map);
+            logger.info(map);
             return JSON.toJSONString(map);
         }
         map.put("code",1);
@@ -45,7 +45,7 @@ public class HomeController {
         map.put("message","数据请求成功");
 
         //日志
-        logger.debug(map);
+        logger.info(map);
         return JSON.toJSONString(map);
     }
 }

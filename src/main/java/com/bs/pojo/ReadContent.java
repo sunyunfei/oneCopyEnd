@@ -9,6 +9,7 @@ public class ReadContent {
     private String readName;//文章名字
     private String readStyle;//文章类型
     private String readAuthor;//文章作者
+    private String readContent;//文章内容
 
     public Integer getUserId() {
         return userId;
@@ -40,6 +41,14 @@ public class ReadContent {
 
     public void setReadAuthor(String readAuthor) {
         this.readAuthor = readAuthor;
+    }
+
+    public String getReadContent() {
+        return readContent;
+    }
+
+    public void setReadContent(String readContent) {
+        this.readContent = readContent;
     }
 
     @Override
