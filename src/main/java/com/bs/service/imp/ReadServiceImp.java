@@ -26,9 +26,9 @@ public class ReadServiceImp implements ReadService {
     }
 
     //查询内容
-   public List<ReadContent> queryReadContent(Integer userId){
+   public List<ReadContent> queryReadContent(String userName){
 
-       return readDao.queryReadContent(userId);
+       return readDao.queryReadContent(userName);
 
    }
 }

@@ -18,8 +18,8 @@ public class HomeServiceImp implements HomeService {
     private HomeDao homeDao;
 
     @Override
-    public List<Home> queryHomeData(Integer userId) {
+    public List<Home> queryHomeData(String userName) {
 
-        return homeDao.queryHomeData(userId);
+        return homeDao.queryHomeData(userName);
     }
 }

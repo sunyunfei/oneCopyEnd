@@ -10,5 +10,5 @@ import java.util.List;
 public interface HomeService {
 
     //获取所有信息
-    public List<Home> queryHomeData(Integer userId);
+    public List<Home> queryHomeData(String userName);
 }

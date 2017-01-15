@@ -8,91 +8,90 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class Home {
 
-    private Integer userId;//用户id
-    private Integer homeId;//homeId
-    private String homeImage;//图片
-    private String homeName;//发表人
-    private String homeContent;//内容
-    private String homeTime;//发表时间
-    private String homeLike;//喜欢人数
-    private String homeNum;//序号
+    private String user_name;//用户
+    private Integer volNum;
+    private String writerName;
+    private String content;
+    private Integer zanNum;
+    private String writeTime;
+    private String picUrl;
+    private Boolean isZan;
 
-    public Integer getUserId() {
-        return userId;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public Integer getHomeId() {
-        return homeId;
+    public Integer getVolNum() {
+        return volNum;
     }
 
-    public void setHomeId(Integer homeId) {
-        this.homeId = homeId;
+    public void setVolNum(Integer volNum) {
+        this.volNum = volNum;
     }
 
-    public String getHomeImage() {
-        return homeImage;
+    public String getWriterName() {
+        return writerName;
     }
 
-    public void setHomeImage(String homeImage) {
-        this.homeImage = homeImage;
+    public void setWriterName(String writerName) {
+        this.writerName = writerName;
     }
 
-    public String getHomeName() {
-        return homeName;
+    public String getContent() {
+        return content;
     }
 
-    public void setHomeName(String homeName) {
-        this.homeName = homeName;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getHomeContent() {
-        return homeContent;
+    public Integer getZanNum() {
+        return zanNum;
     }
 
-    public void setHomeContent(String homeContent) {
-        this.homeContent = homeContent;
+    public void setZanNum(Integer zanNum) {
+        this.zanNum = zanNum;
     }
 
-    public String getHomeTime() {
-        return homeTime;
+    public String getWriteTime() {
+        return writeTime;
     }
 
-    public void setHomeTime(String homeTime) {
-        this.homeTime = homeTime;
+    public void setWriteTime(String writeTime) {
+        this.writeTime = writeTime;
     }
 
-    public String getHomeLike() {
-        return homeLike;
+    public String getPicUrl() {
+        return picUrl;
     }
 
-    public void setHomeLike(String homeLike) {
-        this.homeLike = homeLike;
+    public void setPicUrl(String picUrl) {
+        this.picUrl = picUrl;
     }
 
-    public String getHomeNum() {
-        return homeNum;
+    public Boolean getZan() {
+        return isZan;
     }
 
-    public void setHomeNum(String homeNum) {
-        this.homeNum = homeNum;
+    public void setZan(Boolean zan) {
+        isZan = zan;
     }
-
 
     @Override
     public String toString() {
         return "Home{" +
-                "userId=" + userId +
-                ", homeId=" + homeId +
-                ", homeImage='" + homeImage + '\'' +
-                ", homeName='" + homeName + '\'' +
-                ", homeContent='" + homeContent + '\'' +
-                ", homeTime='" + homeTime + '\'' +
-                ", homeLike='" + homeLike + '\'' +
-                ", homeNum='" + homeNum + '\'' +
+                "user_name='" + user_name + '\'' +
+                ", volNum=" + volNum +
+                ", writerName='" + writerName + '\'' +
+                ", content='" + content + '\'' +
+                ", zanNum=" + zanNum +
+                ", writeTime='" + writeTime + '\'' +
+                ", picUrl='" + picUrl + '\'' +
+                ", isZan=" + isZan +
                 '}';
     }
 }

@@ -4,10 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bs.dao.HomeDao">
     <!--查询所有-->
-    <select id="queryHomeData" resultType="com.bs.pojo.Home">
+    <select id="queryHomeData" parameterType="java.lang.String" resultType="com.bs.pojo.Home">
         SELECT *
         FROM home
-        WHERE user_id=#{userId}
+        WHERE user_name=#{userName}
     </select>
 
 </mapper>

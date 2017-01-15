@@ -38,9 +38,9 @@ public class ReadController {
     //查询内容
     @ResponseBody
     @RequestMapping(value = "/queryContent",produces = "application/json;charset=utf-8")
-    public String queryAllContent(Integer userId){
+    public String queryAllContent(String userName){
 
-        List<ReadContent> list = readServiceImp.queryReadContent(userId);
+        List<ReadContent> list = readServiceImp.queryReadContent(userName);
         return dealList(list);
     }
 
@@ -55,7 +55,7 @@ public class ReadController {
             map.put("message","没有数据");
         }else {
 
-            map.put("code",-1);
+            map.put("code",1);
             map.put("message","有数据");
             map.put("data",list);
         }

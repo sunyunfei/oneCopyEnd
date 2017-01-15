@@ -12,10 +12,10 @@
     </select>
 
     <!--查询内容-->
-    <select id="queryReadContent" resultType="readContent">
+    <select id="queryReadContent" parameterType="java.lang.String" resultType="readContent">
        SELECT *
        FROM readContent
-       WHERE user_id=#{userId}
+       WHERE user_name=#{userName}
 
     </select>
 </mapper>

@@ -14,5 +14,5 @@ import java.util.List;
 public interface HomeDao {
 
     //获取所有信息
-    List<Home> queryHomeData(@Param("userId") Integer userId);
+    List<Home> queryHomeData(@Param("userName") String userName);
 }

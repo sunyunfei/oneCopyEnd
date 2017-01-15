@@ -28,9 +28,9 @@ public class HomeController {
     //查询所有数据
     @ResponseBody
     @RequestMapping(value = "/query",produces = "application/json;charset=utf-8")
-    public String queryHomeData(Integer userId){
+    public String queryHomeData(String userName){
 
-        List<Home> list = homeServiceImp.queryHomeData(userId);
+        List<Home> list = homeServiceImp.queryHomeData(userName);
         Map<String,Object> map = new HashMap<String,Object>();
         //判断是否有数据
         if (list.size() <= 0){

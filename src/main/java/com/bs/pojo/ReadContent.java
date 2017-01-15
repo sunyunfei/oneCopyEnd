@@ -5,59 +5,60 @@ package com.bs.pojo;
  */
 public class ReadContent {
 
-    private Integer userId;
-    private String readName;//文章名字
-    private String readStyle;//文章类型
-    private String readAuthor;//文章作者
-    private String readContent;//文章内容
+    private String userName;
+    private String title;
+    private String writer;
+    private String content;
+    private String type;
 
-    public Integer getUserId() {
-        return userId;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getReadName() {
-        return readName;
+    public String getTitle() {
+        return title;
     }
 
-    public void setReadName(String readName) {
-        this.readName = readName;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getReadStyle() {
-        return readStyle;
+    public String getWriter() {
+        return writer;
     }
 
-    public void setReadStyle(String readStyle) {
-        this.readStyle = readStyle;
+    public void setWriter(String writer) {
+        this.writer = writer;
     }
 
-    public String getReadAuthor() {
-        return readAuthor;
+    public String getContent() {
+        return content;
     }
 
-    public void setReadAuthor(String readAuthor) {
-        this.readAuthor = readAuthor;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getReadContent() {
-        return readContent;
+    public String getType() {
+        return type;
     }
 
-    public void setReadContent(String readContent) {
-        this.readContent = readContent;
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
     public String toString() {
         return "ReadContent{" +
-                "userId=" + userId +
-                ", readName='" + readName + '\'' +
-                ", readStyle='" + readStyle + '\'' +
-                ", readAuthor='" + readAuthor + '\'' +
+                "userName='" + userName + '\'' +
+                ", title='" + title + '\'' +
+                ", writer='" + writer + '\'' +
+                ", content='" + content + '\'' +
+                ", type='" + type + '\'' +
                 '}';
     }
 }

@@ -14,5 +14,5 @@ public interface ReadService {
     List<ReadImage> queryReadImage(Integer userId);
 
     //查询内容
-    List<ReadContent> queryReadContent(Integer userId);
+    List<ReadContent> queryReadContent(String userName);
 }

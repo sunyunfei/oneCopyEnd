@@ -37,12 +37,22 @@ public class UserController {
         User user = new User();
         user.setUserName(userName);
         user.setUserPassword(userPassword);
-        //数据库请求
-        int code = userServiceImp.insertUser(user);
         //返回前端数据
         Map<String,Object> map = new HashMap<String,Object>();
-        map.put("code",code);
-        map.put("message","注册成功");
+        //首先查询这个账号是否已经存在
+        User user1 = userServiceImp.queryUser(userName,userPassword);
+        if (user1 == null){
+
+            //数据库请求
+            int code = userServiceImp.insertUser(user);
+            map.put("code",code);
+            map.put("message","注册成功");
+        }else {
+
+            map.put("code",-1);
+            map.put("message","账号已存在");
+        }
+
         //日志
         logger.info(map);
         return JSON.toJSONString(map);
@@ -55,13 +65,13 @@ public class UserController {
 
         System.out.println("我的数据username:"+userName + " userpassword:"+userPassword);
         //查询
-       User user = userServiceImp.queryUser("15501079053","123456");
+       User user = userServiceImp.queryUser(userName,userPassword);
         Map<String,Object> map = new HashMap<String, Object>();
         //判断是否查询成功
         if (user == null){
 
             map.put("code",-1);
-            map.put("message","账户还没有注册");
+            map.put("message","账户或者密码错误");
         }else {
 
             map.put("code",1);
