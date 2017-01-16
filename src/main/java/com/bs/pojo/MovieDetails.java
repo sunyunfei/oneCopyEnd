@@ -5,40 +5,100 @@ package com.bs.pojo;
  */
 public class MovieDetails {
 
-    private Integer movieId;
-    private String movieImage;
-    private String movieContent;
+    private String movieId;
+    private String icon;
+    private String des;
+    private String content;
+    private String image;
+    private String name;
+    private String type;
+    private String time;
+    private String actor;
 
-    public Integer getMovieId() {
+    public String getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(Integer movieId) {
+    public void setMovieId(String movieId) {
         this.movieId = movieId;
     }
 
-    public String getMovieImage() {
-        return movieImage;
+    public String getIcon() {
+        return icon;
     }
 
-    public void setMovieImage(String movieImage) {
-        this.movieImage = movieImage;
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 
-    public String getMovieContent() {
-        return movieContent;
+    public String getDes() {
+        return des;
     }
 
-    public void setMovieContent(String movieContent) {
-        this.movieContent = movieContent;
+    public void setDes(String des) {
+        this.des = des;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public String getActor() {
+        return actor;
+    }
+
+    public void setActor(String actor) {
+        this.actor = actor;
     }
 
     @Override
     public String toString() {
         return "MovieDetails{" +
-                "movieId=" + movieId +
-                ", movieImage='" + movieImage + '\'' +
-                ", movieContent='" + movieContent + '\'' +
+                "movieId='" + movieId + '\'' +
+                ", icon='" + icon + '\'' +
+                ", des='" + des + '\'' +
+                ", content='" + content + '\'' +
+                ", image='" + image + '\'' +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", time='" + time + '\'' +
+                ", actor='" + actor + '\'' +
                 '}';
     }
 }

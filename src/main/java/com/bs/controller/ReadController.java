@@ -29,9 +29,9 @@ public class ReadController {
     //查询头图
     @ResponseBody
     @RequestMapping(value = "/queryImage",produces = "application/json;charset=utf-8")
-    public String queryAllImage(Integer userId){
+    public String queryAllImage(String userName){
 
-        List<ReadImage> list = readServiceImp.queryReadImage(userId);
+        List<ReadImage> list = readServiceImp.queryReadImage(userName);
         return dealList(list);
     }
 

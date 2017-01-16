@@ -4,10 +4,10 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.bs.dao.MusicDao">
 
-    <!--查询音乐信息-->
-    <select id="queryInfo" resultType="musicInfo">
+    <!--查询评论-->
+    <select id="queryInfo" resultType="musicComment">
         SELECT *
-        FROM musicInfo
+        FROM music_Comment
         WHERE music_id=#{musicId}
     </select>
 
@@ -15,6 +15,13 @@
     <select id="queryMusic" resultType="music">
         SELECT *
         FROM music
+        WHERE user_name=#{userName}
+    </select>
+
+    <!--获取音乐信息-->
+    <select id="queryMusicInfo" resultType="musicInfo">
+        SELECT *
+        FROM music_info
         WHERE music_id=#{musicId}
     </select>
 </mapper>

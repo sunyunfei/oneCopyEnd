@@ -1,28 +1,24 @@
 package com.bs.pojo;
 
 /**
- * Created by syf on 2017/1/8.
+ * Created by syf on 2017/1/16.
  */
 public class MusicInfo {
 
-    private Integer userId;
-    private Integer musicId;//音乐id
-    private String musicName;//歌曲名字
-    private String musicSpecial;//专辑
-    private String musicSinger;//演唱者
-    private String musicWrite;//作词者
-    private String musicCompose;//作曲者
-    private String musicCompany;//公司
-    private String musicCreate;//发行时间
-    private String musicArt;//专辑
-    private String musicEdit;//编辑
+    private Integer musicId;
+    private String image;
+    private String icon;
+    private String time;
+    private String name;
+    private String type;
+    private String url;
 
-    public Integer getUserId() {
-        return userId;
+    public String getUrl() {
+        return url;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public Integer getMusicId() {
@@ -33,92 +29,55 @@ public class MusicInfo {
         this.musicId = musicId;
     }
 
-    public String getMusicName() {
-        return musicName;
+    public String getImage() {
+        return image;
     }
 
-    public void setMusicName(String musicName) {
-        this.musicName = musicName;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public String getMusicSpecial() {
-        return musicSpecial;
+    public String getIcon() {
+        return icon;
     }
 
-    public void setMusicSpecial(String musicSpecial) {
-        this.musicSpecial = musicSpecial;
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 
-    public String getMusicSinger() {
-        return musicSinger;
+    public String getTime() {
+        return time;
     }
 
-    public void setMusicSinger(String musicSinger) {
-        this.musicSinger = musicSinger;
+    public void setTime(String time) {
+        this.time = time;
     }
 
-    public String getMusicWrite() {
-        return musicWrite;
+    public String getName() {
+        return name;
     }
 
-    public void setMusicWrite(String musicWrite) {
-        this.musicWrite = musicWrite;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getMusicCompose() {
-        return musicCompose;
+    public String getType() {
+        return type;
     }
 
-    public void setMusicCompose(String musicCompose) {
-        this.musicCompose = musicCompose;
-    }
-
-    public String getMusicCompany() {
-        return musicCompany;
-    }
-
-    public void setMusicCompany(String musicCompany) {
-        this.musicCompany = musicCompany;
-    }
-
-    public String getMusicCreate() {
-        return musicCreate;
-    }
-
-    public void setMusicCreate(String musicCreate) {
-        this.musicCreate = musicCreate;
-    }
-
-    public String getMusicArt() {
-        return musicArt;
-    }
-
-    public void setMusicArt(String musicArt) {
-        this.musicArt = musicArt;
-    }
-
-    public String getMusicEdit() {
-        return musicEdit;
-    }
-
-    public void setMusicEdit(String musicEdit) {
-        this.musicEdit = musicEdit;
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
     public String toString() {
         return "MusicInfo{" +
-                "userId=" + userId +
-                ", musicId=" + musicId +
-                ", musicName='" + musicName + '\'' +
-                ", musicSpecial='" + musicSpecial + '\'' +
-                ", musicSinger='" + musicSinger + '\'' +
-                ", musicWrite='" + musicWrite + '\'' +
-                ", musicCompose='" + musicCompose + '\'' +
-                ", musicCompany='" + musicCompany + '\'' +
-                ", musicCreate='" + musicCreate + '\'' +
-                ", musicArt='" + musicArt + '\'' +
-                ", musicEdit='" + musicEdit + '\'' +
+                "musicId=" + musicId +
+                ", image='" + image + '\'' +
+                ", icon='" + icon + '\'' +
+                ", time='" + time + '\'' +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
                 '}';
     }
 }

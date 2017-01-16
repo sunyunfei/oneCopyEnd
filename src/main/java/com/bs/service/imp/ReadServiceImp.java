@@ -20,9 +20,9 @@ public class ReadServiceImp implements ReadService {
 
     //查询头图
     @Override
-    public List<ReadImage> queryReadImage(Integer userId) {
+    public List<ReadImage> queryReadImage(String userName) {
 
-        return readDao.queryReadImage(userId);
+        return readDao.queryReadImage(userName);
     }
 
     //查询内容

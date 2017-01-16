@@ -5,10 +5,10 @@
 <mapper namespace="com.bs.dao.ReadDao">
 
     <!--查询头图-->
-    <select id="queryReadImage" resultType="readImage">
+    <select id="queryReadImage" parameterType="java.lang.String" resultType="readImage">
         SELECT *
         FROM readImage
-        WHERE user_id=#{userId}
+        WHERE user_name=#{userName}
     </select>
 
     <!--查询内容-->

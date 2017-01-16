@@ -11,7 +11,7 @@ import java.util.List;
 public interface ReadService {
 
     //查询头图
-    List<ReadImage> queryReadImage(Integer userId);
+    List<ReadImage> queryReadImage(String userName);
 
     //查询内容
     List<ReadContent> queryReadContent(String userName);

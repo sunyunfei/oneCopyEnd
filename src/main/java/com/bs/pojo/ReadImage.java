@@ -5,30 +5,40 @@ package com.bs.pojo;
  */
 public class ReadImage {
 
-    private Integer userId;
-    private String readImage;
+    private String userName;
+    private String img;
+    private String link;
 
-    public Integer getUserId() {
-        return userId;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getReadImage() {
-        return readImage;
+    public String getImg() {
+        return img;
     }
 
-    public void setReadImage(String readImage) {
-        this.readImage = readImage;
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 
     @Override
     public String toString() {
         return "ReadImage{" +
-                "userId=" + userId +
-                ", readImage='" + readImage + '\'' +
+                "userName='" + userName + '\'' +
+                ", img='" + img + '\'' +
+                ", link='" + link + '\'' +
                 '}';
     }
 }
